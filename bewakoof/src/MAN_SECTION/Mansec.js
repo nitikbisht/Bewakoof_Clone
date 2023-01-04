@@ -4,7 +4,7 @@ function Mansec(props) {
     return (
         <div>
             <h1>Men SECTION </h1>
-           
+            
         </div>
     );
 }
