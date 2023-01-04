@@ -9,6 +9,38 @@
     align-items: center;
     gap: 10px;
 }
+/* .top>h1{
+    text-decoration: underline yellow 2px;
+} */
 .product{
     display: flex;
+    gap: 20px;
 }
+.filter{
+    width: 25%;
+    background-color: aqua;
+}
+.main{
+    width: 75%;
+    /* background-color: bisque; */
+    margin-left: 20px;
+    /* padding: 20px; */
+    padding-left: 20px;
+}
+.main>*:first-child{
+    /* background-color: aqua; */
+    width: fit-content;
+    display: flex;
+    margin-left: 80%;
+    align-items: center;
+    gap: 8px;
+    /* border: none; */
+}
+
+.display{
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
