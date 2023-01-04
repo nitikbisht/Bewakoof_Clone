@@ -1,0 +1,14 @@
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product{
+    display: flex;
+}
