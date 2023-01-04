@@ -22,46 +22,46 @@ function MenClothing() {
             </div>
             <div id="filter">
               {/* ///////////   Price     ///////////// */}
-            <div id="price" class="filter-child"> 
+            <div id="price" className="filter-child"> 
                 <span>PRICE</span>
                 <div>
-                    <input class="price-input" type="checkbox" name="200" value="300"/>
+                    <input className="price-input" type="checkbox" name="200" value="300"/>
                     <label for="">Rs. 200 to Rs. 300 </label>
                 </div>
                 <div>
-                    <input class="price-input" type="checkbox" name="301" value="400"/>
+                    <input className="price-input" type="checkbox" name="301" value="400"/>
                     <label for="">Rs. 301 to Rs. 400 </label>
                 </div>
                 <div>
-                    <input class="price-input" type="checkbox" name="401" value="500"/>
+                    <input className="price-input" type="checkbox" name="401" value="500"/>
                     <label for="">Rs. 401 to Rs. 500 </label>
                 </div>
             </div>
             {/* ///////////   Discount     ///////////// */}
-            <div class="filter-child">
+            <div className="filter-child">
                 <span>DISCOUNT RANGE</span>
                 <div>
-                    <input class="discount-input" type="checkbox" value="10"/>
+                    <input className="discount-input" type="checkbox" value="10"/>
                     <label for="">10% and above</label>
                 </div>
                 <div>
-                    <input class="discount-input" type="checkbox" value="20"/>
+                    <input className="discount-input" type="checkbox" value="20"/>
                     <label for="">20% and above</label>
                 </div>
                 <div>
-                    <input class="discount-input" type="checkbox" value="30"/>
+                    <input className="discount-input" type="checkbox" value="30"/>
                     <label for="">30% and above</label>
                 </div>
                 <div>
-                    <input class="discount-input" type="checkbox" value="40"/>
+                    <input className="discount-input" type="checkbox" value="40"/>
                     <label for="">40% and above</label>
                 </div>
                 <div>
-                    <input class="discount-input" type="checkbox" value="50"/>
+                    <input className="discount-input" type="checkbox" value="50"/>
                     <label for="">50% and above</label>
                 </div>
                 <div>
-                    <input class="discount-input" type="checkbox" value="60"/>
+                    <input className="discount-input" type="checkbox" value="60"/>
                     <label for="">60% and above</label>
                 </div>
             </div>

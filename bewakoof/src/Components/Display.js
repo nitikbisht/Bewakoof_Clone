@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import style from "./display.module.css"
 function Display({data}) {
   return (
+  <Link to={`/men-clothing/${data.id}` }>
     <div className={style.display}>
       <img src={data.image[0]} width={"100%"}/>
       <div style={{display:"flex",justifyContent:"space-between"}}>
@@ -14,6 +16,7 @@ function Display({data}) {
         <h5>₹{data.originalprice}</h5>
       </div>
     </div>
+  </Link>
   )
 }
 

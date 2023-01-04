@@ -9,16 +9,17 @@
     align-items: center;
     gap: 10px;
 }
-/* .top>h1{
-    text-decoration: underline yellow 2px;
-} */
+
 .product{
     display: flex;
     gap: 20px;
 }
 .filter{
-    width: 25%;
-    background-color: aqua;
+    width: 20%;
+    padding: 15px;
+    border: 1px solid grey;
+    height: fit-content;
+    /* background-color: aqua; */
 }
 .main{
     width: 75%;
