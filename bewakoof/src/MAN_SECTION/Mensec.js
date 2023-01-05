@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
-function Mansec(props) {
+function Mensec(props) {
     return (
         <div>
         <Carousel
@@ -37,4 +37,4 @@ function Mansec(props) {
     );
 }
 
-export default Mansec;
+export default Mensec;

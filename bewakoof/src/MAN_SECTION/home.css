@@ -2,12 +2,12 @@
 /* Carouselcss here */
 
 
-.mapA,.mapB,.mapC,.mapD{
+.mapA{
      margin: auto;
       padding: 0px 5px 0px 5px;
       border:"2px solid red";
-       width: 100%; 
-      height: 350px;
+       width: 90%; 
+      height: 550px;
      
 }
 .mapA img:hover{
