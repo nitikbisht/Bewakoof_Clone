@@ -23,10 +23,13 @@
     padding-left: 10px;
 }
 .rating{
-    background-color: rgb(212, 212, 212);
-    border: 1px solid grey;
+    background-color: #d6d5d5;
+    border: .3px solid #949494;
     height: 30px;
     align-items: center;
+    display: flex;
+    gap: 3px;
+    padding-left: 10px;
 }
 .price{
     display: flex;
@@ -40,6 +43,9 @@
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 2px solid rgb(180, 178, 178);
+}
+button{
+    cursor: pointer;
 }
 
 
