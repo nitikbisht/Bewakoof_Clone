@@ -7,9 +7,9 @@ function Display({data}) {
   <Link to={`/men-clothing/${data.id}` }>
     <div className={style.display}>
       <img src={data.image[0]} className='image' width={"100%"}/>
-      <div style={{display:"flex",justifyContent:"space-between"}}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
         <h5>Bewakoof</h5>
-        <h6>icon</h6>
+        <img src="https://cdn0.iconfinder.com/data/icons/gender-thinline-set/144/Love-512.png" width={"30px"} height={"30px"}/>
       </div>
       <p>{data.name}</p>
       <div className={style.price}>
