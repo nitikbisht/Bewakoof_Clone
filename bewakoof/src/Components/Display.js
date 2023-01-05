@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import style from "./display.module.css"
 function Display({data}) {
+  
   return (
   <Link to={`/men-clothing/${data.id}` }>
     <div className={style.display}>
-      <img src={data.image[0]} width={"100%"}/>
+      <img src={data.image[0]} className='image' width={"100%"}/>
       <div style={{display:"flex",justifyContent:"space-between"}}>
         <h5>Bewakoof</h5>
         <h6>icon</h6>

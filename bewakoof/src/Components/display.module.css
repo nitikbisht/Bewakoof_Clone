@@ -1,8 +1,10 @@
 .display{
 margin: 10px;
+height: 430px;
 border: 1px solid lightgray;
 padding: 10px;
 color: black;
+
 text-decoration: underline white;
 /* text-decoration: none; */
 }
