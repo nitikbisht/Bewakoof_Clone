@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './carousel.css'
+ import './mini.css'
+// import  "../Home/home.css"
 
-const Carousel = (props) => {
+const Carousela = (props) => {
     const {children, show} = props
+    // console.log(show)
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
@@ -58,7 +60,7 @@ const Carousel = (props) => {
                 {/* You can alwas change the content of the button to other things */}
                 {
                     currentIndex > 0 &&
-                    <button onClick={prev} className="left-arrows">
+                    <button onClick={prev} className="left-arrow">
                         &lt;
                     </button>
                 }
@@ -77,7 +79,7 @@ const Carousel = (props) => {
                 {/* You can alwas change the content of the button to other things */}
                 {
                     currentIndex < (length - show) &&
-                    <button onClick={next} className="right-arrows">
+                    <button onClick={next} className="right-arrow">
                         &gt;
                     </button>
                 }
@@ -86,4 +88,4 @@ const Carousel = (props) => {
     )
 }
 
-export default Carousel
+export default Carousela

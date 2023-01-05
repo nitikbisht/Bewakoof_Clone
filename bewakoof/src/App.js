@@ -1,7 +1,21 @@
 
 import React from 'react';
+import { useState } from 'react';
 import Mansec from './MAN_SECTION/Mansec';
+import Carousela from './MAN_SECTION/Minicarousel';
+ import "./MAN_SECTION/mini.css"
+ import "./MAN_SECTION/home.css"
 function App() {
+ const[product,setProduct]=useState([])  
+
+   fetch("https://himangshumahato82.github.io/Bewakoof/db.json")
+   .then ((res)=>res.json())
+   .then((data)=>{
+     console.log(data.ARRIVALS)
+     setProduct(data.ARRIVALS)
+   })
+
+
   return (
     <div className="App" >
      <h1>Himangshu</h1>
@@ -52,9 +66,98 @@ function App() {
        
        </div>
           <div>
-          
+           <h4 style={{textAlign:"center",marginTop:"50px"}}> POPULAR CATEGORIES</h4>
+          <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"10px"}}>
+              
+             <div>
+              <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-printed-tees-1668772678.jpg" alt="" />
+             
+             </div>
+             <div>
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-7-1670503951.jpg" alt="" />
+             </div>
+             <div>
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-e-1670938024.jpg" alt="" />
+             </div>
+             <div>
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-2-1670503952.jpg" alt="" />
+             </div>
+             <div>
+              <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-d-1670923576.jpg" alt="" />
+             </div>
+             <div>
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-1-1670503953.jpg" alt="" />
+             </div>
+               
           </div>
+          <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-joggers-1668772677.jpg" alt="" />
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-pyjamas-1668772679.jpg" alt="" />
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-shirts-1668772679.jpg" alt="" />
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-boxers-1668772675.jpg" alt="" />
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-jeans-1668772677.jpg" alt="" />
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-Shoes-1668754848.jpg" alt="" />
+           </div>
+              
+           
+          </div>
+          <h4 style={{textAlign:"center",marginTop:"30px"}}>DISCOUNT PE DISCOUNT</h4>
+           <div  style={{width:"98%",display:"flex",margin:"auto",marginTop:"10px"}}>
+            <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-softcottomPJ-Common-1672319772.jpg" alt="" width={"99%"}/>
+            </div>
+            <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/full-sleeve-mid-1672235827.jpg" alt="" width={"99%"} />
+            </div>
+           
+           </div>
+           <div  style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/midsize-banner--windcheater-1671719823.jpg" alt="" width={"99%"}/>
+           </div>
+           <div>
+           <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-buy3at899-1672668872.jpg" alt="" width={"99%"} />
+           </div>
+            
+          </div>
+            
 
+          </div>
+          <div style={{ marginBottom:"80px"}}>
+            
+            <Carousela
+            show={4}
+              >
+            
+            { 
+              product.map((elem)=>{
+                return(
+                 
+                <div className='mapA'>
+               
+                  {console.log(elem.img)}
+                <img src={elem.img} alt="" />
+               
+                
+                
+                </div>
+                )
+              })
+            }
+          
+            </Carousela>
+            </div>
 
     </div>
    

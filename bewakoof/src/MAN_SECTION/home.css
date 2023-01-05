@@ -1,0 +1,50 @@
+
+/* Carouselcss here */
+
+
+.mapA,.mapB,.mapC,.mapD{
+     margin: auto;
+      padding: 0px 5px 0px 5px;
+      border:"2px solid red";
+       width: 100%; 
+      height: 350px;
+     
+}
+.mapA img:hover{
+        -ms-transform: scale(1.03); 
+        -webkit-transform: scale(1.03); 
+        transform: scale(1.03);
+    }
+    
+    .mapA img{
+        transition: .8s;
+    }
+
+    .mapB img:hover{
+        -ms-transform: scale(1.03); 
+        -webkit-transform: scale(1.03); 
+        transform: scale(1.03);
+    }
+    
+    .mapB img{
+        transition: .8s;
+    }
+    .mapC img:hover{
+        -ms-transform: scale(1.03); 
+        -webkit-transform: scale(1.03); 
+        transform: scale(1.03);
+    }
+    
+    .mapC img{
+        transition: .8s;
+    }
+    .mapD img:hover{
+        -ms-transform: scale(1.03); 
+        -webkit-transform: scale(1.03); 
+        transform: scale(1.03);
+    }
+    
+    .mapD img{
+        transition: .8s;
+    }
+    
