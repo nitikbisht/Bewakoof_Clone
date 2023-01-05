@@ -134,10 +134,10 @@ function App() {
             
 
           </div>
-          <div style={{ marginBottom:"80px"}}>
+          <div style={{ marginBottom:"80px",}}>
             
             <Carousela
-            show={4}
+            show={5}
               >
             
             { 
@@ -147,10 +147,14 @@ function App() {
                 <div className='mapA'>
                
                   {console.log(elem.img)}
-                <img src={elem.img} alt="" />
-               
-                
-                
+                <img src={elem.img} alt=""  width={"95%"} height={"350px"}/>
+                 <h5 style={{textAlign:"center"}}>{elem.brand}</h5>
+                 <p style={{textAlign:"center"}}>{elem.title}</p>
+                 <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                 <h4>₹{elem.price}</h4>
+                 <h6 style={{textDecoration:"line-through"}}>{elem.strike}</h6>
+                 <h4 style={{}}> {elem.off}</h4>
+                 </div>
                 </div>
                 )
               })

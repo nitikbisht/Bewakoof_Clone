@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
  import './mini.css'
-// import  "../Home/home.css"
+ import  "./home.css"
 
 const Carousela = (props) => {
     const {children, show} = props
-    // console.log(show)
+     console.log(show)
+     console.log(children)
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
@@ -43,11 +44,11 @@ const Carousela = (props) => {
         const currentTouch = e.touches[0].clientX
         const diff = touchDown - currentTouch
 
-        if (diff > 5) {
+        if (diff > 6) {
             next()
         }
 
-        if (diff < -5) {
+        if (diff < -6) {
             prev()
         }
 
