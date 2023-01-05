@@ -66,7 +66,7 @@ const Carousela = (props) => {
                     </button>
                 }
                 <div
-                    className="carousel-content-wrapper"
+                    className="carousel-content-wrappers"
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
                 >
