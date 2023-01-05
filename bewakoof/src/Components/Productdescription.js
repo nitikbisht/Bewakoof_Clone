@@ -14,12 +14,14 @@ function Productdescription() {
     console.log(arr)
   return (
     <div className={style.container}>
-    <div style={{display:"grid",gap:"5px"}}>
+    <div  className={style.smallimg}>
       {arr[0].image.map((el)=>{
-        return <img src={el} width={"50px"}/>
+        return <img src={el} width={"55px"} onClick={()=>{setState(el)}}/>
       })}
     </div>
-
+      <div>
+        <img src={state} width={"100%"} height={"500px"}/>
+      </div>
     </div>
   )
 }
