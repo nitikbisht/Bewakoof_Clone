@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import Cart from './Component/Cart/Cart';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         {/* <Route path='/' element={}/> */}
       </Routes>
+      <Cart />
     </div>
   );
 }

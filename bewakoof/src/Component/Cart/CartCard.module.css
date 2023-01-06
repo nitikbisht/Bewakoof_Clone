@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    justify-content: space-between ;
+}
+
+#action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#action button {
+    border: none;
+    padding: 5px 15px;
+    margin: 10px 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#card_box {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px ;
+}
+
+#imgDiv {
+    padding: 5px 10px;
+}
+#imgDiv img {
+    width: 100px;
+    box-shadow: 0 0 1px black;
+    border-radius: 5px;
+}
+
+#prod_text {
+    /* border: 2px solid rebeccapurple; */
+    text-align: left;
+    padding: 5px 10px;
+}
+
+#prod_text p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
