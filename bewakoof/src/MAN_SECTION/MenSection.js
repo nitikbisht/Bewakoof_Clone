@@ -27,7 +27,7 @@ function MenSection(props) {
     return (
         <div>
             
-        <h1>Men Section</h1>
+        <h1>Men's Section</h1>
         <div>
        <Mensec/>
        </div>
