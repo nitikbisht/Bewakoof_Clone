@@ -12,7 +12,7 @@ const Carousela = (props) => {
 
     const [touchPosition, setTouchPosition] = useState(null)
 
-    // Set the length to match current children from props
+    
     useEffect(() => {
         setLength(children.length)
     }, [children])
@@ -58,7 +58,7 @@ const Carousela = (props) => {
     return (
         <div className="carousel-container">
             <div className="carousel-wrapper">
-                {/* You can alwas change the content of the button to other things */}
+              
                 {
                     currentIndex > 0 &&
                     <button onClick={prev} className="left-arrow">
@@ -77,7 +77,7 @@ const Carousela = (props) => {
                         {children}
                     </div>
                 </div>
-                {/* You can alwas change the content of the button to other things */}
+               
                 {
                     currentIndex < (length - show) &&
                     <button onClick={next} className="right-arrow">
