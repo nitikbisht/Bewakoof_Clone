@@ -39,7 +39,7 @@
             "name":"Hell No Monday Half Sleeve T-Shirt Navy Blue",
             "price":449,
             "originalprice":1099,
-            "rating":4.5
+            "rating":2.5
         },
         {
             "image":[
@@ -53,7 +53,7 @@
             "name":"Men's Blue T-shirt",
             "price":579,
             "originalprice":1199,
-            "rating":4.5
+            "rating":3.5
         },
         {
             "image":[
@@ -67,7 +67,7 @@
             "name":"Moon Knight 2.0 Full Sleeve T-shirt",
             "price":449,
             "originalprice":1199,
-            "rating":4.5
+            "rating":2.5
         },
         {
             "image":[
@@ -81,7 +81,7 @@
             "name":"Men's Black Kyuubi Mode Graphic Printed Oversized T-shirt",
             "price":699,
             "originalprice":1499,
-            "rating":4.5
+            "rating":4.1
         },
         {
             "image":[
@@ -95,7 +95,7 @@
             "name":"Men's White Find Your True Peace Graphic Printed Oversized T-shirt",
             "price":499,
             "originalprice":1499,
-            "rating":4.5
+            "rating":3.8
         },
         {
             "image":[
@@ -109,7 +109,7 @@
             "name":"Men's Blue T-shirt",
             "price":999,
             "originalprice":1199,
-            "rating":4.5
+            "rating":3.6
         },
         {
             "image":[
@@ -123,7 +123,7 @@
             "name":"Hell No Monday Half Sleeve T-Shirt Navy Blue",
             "price":749,
             "originalprice":1099,
-            "rating":4.5
+            "rating":3.2
         },
         {
             "image":[
@@ -137,7 +137,7 @@
             "name":"Men's White Striped Oversized T-shirt",
             "price":949,
             "originalprice":1799,
-            "rating":4.5
+            "rating":1.5
         },
         {
             "image":[
@@ -151,7 +151,7 @@
             "name":"Men's Black NASA Badge Typography Oversized T-shirt",
             "price":699,
             "originalprice":1499,
-            "rating":4.5
+            "rating":3.9
         },
         {
             "image":[
@@ -165,7 +165,7 @@
             "name":"Men's Black Kyuubi Mode Graphic Printed Oversized T-shirt",
             "price":699,
             "originalprice":1499,
-            "rating":4.5
+            "rating":4.7
         },
         {
             "image":[
@@ -177,9 +177,9 @@
             ],
             "id":13,
             "name":"Peace Out Astronaut Full Sleeve T-Shirt Black",
-            "price":549,
+            "price":449,
             "originalprice":1299,
-            "rating":4.5
+            "rating":4.8
         },
         {
             "image":[
@@ -193,7 +193,7 @@
             "name":"Men's White Find Your True Peace Graphic Printed Oversized T-shirt",
             "price":499,
             "originalprice":1499,
-            "rating":4.5
+            "rating":4.6
         },
         {
             "image":[
@@ -207,7 +207,7 @@
             "name":"Moon Knight 2.0 Full Sleeve T-shirt",
             "price":899,
             "originalprice":1199,
-            "rating":4.5
+            "rating":3.8
         },
         {
             "image":[
@@ -249,7 +249,7 @@
             "name":"Men's White Striped Oversized T-shirt",
             "price":949,
             "originalprice":1799,
-            "rating":4.5
+            "rating":3.5
         },
         {
             "image":[
@@ -263,7 +263,7 @@
             "name":"Men's White Find Your True Peace Graphic Printed Oversized T-shirt",
             "price":499,
             "originalprice":1499,
-            "rating":4.5
+            "rating":2.5
         },
         {
             
@@ -278,7 +278,7 @@
             "name":"Men's Black Kyuubi Mode Graphic Printed Oversized T-shirt",
             "price":699,
             "originalprice":1499,
-            "rating":4.5
+            "rating":4.1
         }
     ]
 }
