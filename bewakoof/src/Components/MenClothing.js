@@ -8,6 +8,7 @@ import Display from './Display'
 function MenClothing() {
     const[data,setData]=useState(dat.men)
     const[sort,setSort]=useState(1)
+    const[filter,setFilter]=useState("")
     // console.log(data)
   return (
     <div className={style.container}>
