@@ -7,7 +7,7 @@ import Display from './Display'
 
 function MenClothing() {
     const[data,setData]=useState(dat.men)
-    const[sort,setSort]=useState("all")
+    const[sort,setSort]=useState(1)
     // console.log(data)
   return (
     <div className={style.container}>
@@ -42,6 +42,7 @@ function MenClothing() {
                                 return 0
                             })
                             setData(arr)
+                            setSort(4)
                           }
                           else if(nameorder==="high"){
                             console.log("high")
@@ -55,6 +56,7 @@ function MenClothing() {
                                 return 0
                             })
                             setData(arr)
+                            setSort(3)
                         }
                         else if(nameorder==="rating"){
                             console.log("rating")
@@ -68,6 +70,7 @@ function MenClothing() {
                                 return 0
                             })
                             setData(arr)
+                            setSort(2)
                         }
                         else if(nameorder==="all"){
                             console.log("all")
@@ -81,8 +84,9 @@ function MenClothing() {
                                 return 0
                             })
                             setData(arr)
+                            setSort(1)
                         }
-                        console.log(data)
+                        // console.log(data)
                         
                       }}>
                           <option value={"all"}>New Arrival</option>
@@ -91,6 +95,7 @@ function MenClothing() {
                           <option value={"low"}>Low To High</option>
                       </select>
                   </div>
+                  {/* {console.log(sort)} */}
                   <div className={style.display}>
                     {/* {console.log(data)} */}
                       {data.map((el, ind) => {
