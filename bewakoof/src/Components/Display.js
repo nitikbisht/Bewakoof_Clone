@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import style from "./display.module.css"
 function Display({data}) {
-  
+  // console.log(data)
   return (
   <Link to={`/men-clothing/${data.id}` }>
     <div className={style.display}>
