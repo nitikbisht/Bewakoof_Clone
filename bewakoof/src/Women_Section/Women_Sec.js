@@ -27,7 +27,7 @@ function MenSection(props) {
     return (
         <div>
             
-        <h1>Women's Section</h1>
+        <h1 style={{textAlign:"center",color:"teal"}}>Women's Section</h1>
         <div>
        <Womensec/>
        </div>
