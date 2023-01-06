@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import Mensec from "./Mensec"
-import Carousela from './Minicarousel';
-import "./home.css"
-import "./mini.css"
-import { Link } from 'react-router-dom';
+import Womensec from './WomenSec';
+import Carousela from './Wminicarousel';
+import "../MAN_SECTION/home.css"
+import "../MAN_SECTION/mini.css"
 function MenSection(props) {
     const[product,setProduct]=useState([])
     //  const[products,setProducts]=useState([])
@@ -19,7 +18,7 @@ function MenSection(props) {
        .then ((res)=>res.json())
        .then((data)=>{
          console.log(data.products)
-         setProduct(data.products.Men)
+         setProduct(data.products.Women)
         //  setProducts(data.ARRIVALS)
     
        })
@@ -27,35 +26,33 @@ function MenSection(props) {
       }
     return (
         <div>
-        <h1 style={{textAlign:"center",color:"teal"}}>Men's Section</h1>
+            
+        <h1 style={{textAlign:"center",color:"teal"}}>Women's Section</h1>
         <div>
-       <Mensec/>
+       <Womensec/>
        </div>
         <div style={{display:"block",margin:"auto",padding:"20px"}}>
         <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-1-1668681804.gif" alt="" />
         </div>
-        <Link to={"/men-clothing"}>
-           
-         <div  style={{width:"74%",height:"200px",display:"flex",margin:"auto",textDecoration:"underline white",color:"black"}}>
+         <div  style={{width:"74%",height:"200px",display:"flex",margin:"auto"}}>
            <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-thumbnail-men-1672724845.gif" alt="" width={"120px"} />
+             <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-thumbnail-Women-1672724845.gif" alt="" width={"120px"} />
              <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-8px",marginTop:"15px"}}>designs of the Week</p>
            </div>
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Bestseller-Men-1668491213.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668491210.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>Bestsellers</p>
            </div>
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668491210.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Customise-Women-1668491215.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>Hot Deals</p>
            </div>
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Customise-Men-1668491215.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Women-1668491217.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"5px",marginTop:"15px"}}>Customization</p>
            </div>
-          
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Men-1668491217.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Bestseller-Women-1668491213.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>New Arrivals</p>
            </div>
            <div>
@@ -63,11 +60,11 @@ function MenSection(props) {
            <p style={{textAlign:'center',height:"5px",marginRight:"0px",marginTop:"15px"}}>Last Sizes Left</p>
            </div>
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-PlusSize-Men-1668491218.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-women-plus-1668491893.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>Plus Size</p>
            </div>
            <div>
-           <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Collabs-Men-1668491214.jpg" alt="" width={"120px"} />
+           <img src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-women-merch-1668491892.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>Official Collaboration</p>
            </div>
            <div>
@@ -77,50 +74,49 @@ function MenSection(props) {
          
          
          </div>
-         </Link>
             <div>
              <h4 style={{textAlign:"center",marginTop:"50px"}}> POPULAR CATEGORIES</h4>
             <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"10px"}}>
                 
                <div>
-                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-printed-tees-1668772678.jpg" alt="" />
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Boyfriend-Tshirt-women-1672907482.png" alt="" />
                
                </div>
                <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-7-1670503951.jpg" alt="" />
+               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Full-Sleeve-Tshirt-women-1672907486.png" alt="" />
                </div>
                <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-e-1670938024.jpg" alt="" />
+               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Oversize-tshirt-women-1672907491.png" alt="" />
                </div>
                <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-2-1670503952.jpg" alt="" />
+               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Sweater-women-1672907495.png" alt="" />
                </div>
                <div>
-                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-d-1670923576.jpg" alt="" />
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Sweatshirt---Hoodies-women-1672907496.png" alt="" />
                </div>
                <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-1-1670503953.jpg" alt="" />
+               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Jackets-women-1672907487.png" alt="" />
                </div>
                  
             </div>
             <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-joggers-1668772677.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-printed-tshirt-women-1672907492.png" alt="" />
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-pyjamas-1668772679.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Pyjamas-women-1672907492.png" alt="" />
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-shirts-1668772679.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Joggers-women-1672907489.png" alt="" />
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-boxers-1668772675.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-fashion-tops-1668773242.jpg" alt="" />
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-jeans-1668772677.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Jeans-women-1672907488.png" alt="" />
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-Shoes-1668754848.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Co-ords-1672907485.png" alt="" />
              </div>
              </div>
              <h4 style={{textAlign:"center",marginTop:"10px"}}>NEW ARRIVALS</h4>
@@ -156,19 +152,19 @@ function MenSection(props) {
             <h4 style={{textAlign:"center",marginTop:"0px"}}>DISCOUNT PE DISCOUNT</h4>
              <div  style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
               <div>
-              <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-softcottomPJ-Common-1672319772.jpg" alt="" width={"99%"}/>
+              <img src="https://images.bewakoof.com/uploads/grid/app/mid-banner-solid-hoodies-w-1669895289.jpg" alt="" width={"99%"}/>
               </div>
               <div>
-              <img src="https://images.bewakoof.com/uploads/grid/app/full-sleeve-mid-1672235827.jpg" alt="" width={"99%"} />
+              <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-softcottomPJ-Common-1672319772.jpg" alt="" width={"99%"} />
               </div>
              
              </div>
              <div  style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/midsize-banner--windcheater-1671719823.jpg" alt="" width={"99%"}/>
+             <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-women-pants-1668491468.jpg" alt="" width={"99%"}/>
              </div>
              <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-buy3at899-1672668872.jpg" alt="" width={"99%"} />
+             <img src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-women-pants-1668491468.jpg" alt="" width={"99%"} />
              </div>
               
             </div>
@@ -205,7 +201,7 @@ function MenSection(props) {
               </Carousela>
               </div>
              <div style={{marginBottom:"30px",marginTop:"-90px",marginLeft:"15px"}}>
-             <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="" />
+             <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-1-1672040128.jpg" alt="" />
              
              </div>
 

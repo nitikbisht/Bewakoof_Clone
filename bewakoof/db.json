@@ -1,5 +1,7 @@
 {
-         "ARRIVALS":[
+
+    "products":{
+         "Men":[
             {
                
                 "img":"https://images.bewakoof.com/t320/men-classic-mickey-f-b-printed-t-shirt-563360-1672312100-1.jpg",
@@ -82,9 +84,9 @@
              },
              {
                 
-                 "img":"",
+                 "img":"https://images.bewakoof.com/t320/men-s-black-the-warrior-king-graphic-printed-oversized-t-shirt-565893-1672377733-1.jpg",
                  "brand":"Bewakoof",
-                 "title":"",
+                 "title":"Men's Purple Ross...",
                   "price": 857,
                   "strike":1799,
                   "off":"50%"
@@ -100,7 +102,112 @@
                   "off":"46%"
  
              }
+         ],
+         "Women":[
+            {
+               
+                "img":"https://images.bewakoof.com/t320/women-classic-mickey-f-b-printed-t-shirt-563353-1672312058-1.jpg",
+                "brand":"Bewakoof",
+                "title":"Women's Red & White Classi...",
+                 "price": 899,
+                 "strike":1799,
+                 "off":"50%"
+
+            },
+            {
+                
+                 "img":"https://images.bewakoof.com/t320/women-mickey-distort-printed-top-563349-1672134049-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's White Mood of ...",
+                  "price": 494,
+                  "strike":1299,
+                  "off":"61%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-pop-minnie-printed-t-shirt-563362-1672134630-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Black Mood of ...",
+                  "price": 899,
+                  "strike":1799,
+                  "off":"50%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-yellow-been-there-boyfriend-t-shirt-482683-1655750298-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Yellow Mood of ...",
+                  "price": 499,
+                  "strike":799,
+                  "off":"43%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-green-harry-s-house-graphic-printed-oversized-t-shirt-565910-1672384155-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Green Travelling ...",
+                  "price": 857,
+                  "strike":1799,
+                  "off":"50%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-black-i-ll-be-there-for-you-graphic-printed-boyfriend-t-shirt-565916-1672383731-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Black Mickey of ...",
+                  "price": 657,
+                  "strike":1399,
+                  "off":"53%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-blue-the-view-graphic-printed-boyfriend-t-shirt-565899-1672411151-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Black Mickey of ...",
+                  "price": 857,
+                  "strike":1799,
+                  "off":"53%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-brown-harry-s-house-graphic-printed-oversized-t-shirt-565911-1672383768-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Acid washed...",
+                  "price": 799,
+                  "strike":1799,
+                  "off":"50%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-cheeky-pink-color-block-joggers-501552-1655836544-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Purple Ross...",
+                  "price": 857,
+                  "strike":1799,
+                  "off":"50%"
+ 
+             },
+             {
+                
+                 "img":"https://images.bewakoof.com/t320/women-s-purple-harry-s-house-graphic-printed-oversized-t-shirt-565913-1672383811-1.jpg",
+                 "brand":"Bewakoof",
+                 "title":"Women's Purple Ross...",
+                  "price": 699,
+                  "strike":1299,
+                  "off":"46%"
+ 
+             }
+
          ]
+
+        }
         
      }
          
