@@ -4,6 +4,7 @@ import Mensec from "./Mensec"
 import Carousela from './Minicarousel';
 import "./home.css"
 import "./mini.css"
+import { Link } from 'react-router-dom';
 function MenSection(props) {
     const[product,setProduct]=useState([])
     //  const[products,setProducts]=useState([])
@@ -26,7 +27,6 @@ function MenSection(props) {
       }
     return (
         <div>
-            
         <h1 style={{textAlign:"center",color:"teal"}}>Men's Section</h1>
         <div>
        <Mensec/>
@@ -34,7 +34,9 @@ function MenSection(props) {
         <div style={{display:"block",margin:"auto",padding:"20px"}}>
         <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-1-1668681804.gif" alt="" />
         </div>
-         <div  style={{width:"74%",height:"200px",display:"flex",margin:"auto"}}>
+        <Link to={"/men-clothing"}>
+           
+         <div  style={{width:"74%",height:"200px",display:"flex",margin:"auto",textDecoration:"underline white",color:"black"}}>
            <div>
              <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-thumbnail-men-1672724845.gif" alt="" width={"120px"} />
              <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-8px",marginTop:"15px"}}>designs of the Week</p>
@@ -51,6 +53,7 @@ function MenSection(props) {
            <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Customise-Men-1668491215.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"5px",marginTop:"15px"}}>Customization</p>
            </div>
+          
            <div>
            <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Men-1668491217.jpg" alt="" width={"120px"} />
            <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-10px",marginTop:"15px"}}>New Arrivals</p>
@@ -74,6 +77,7 @@ function MenSection(props) {
          
          
          </div>
+         </Link>
             <div>
              <h4 style={{textAlign:"center",marginTop:"50px"}}> POPULAR CATEGORIES</h4>
             <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"10px"}}>
