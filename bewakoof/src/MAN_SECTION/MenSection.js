@@ -31,15 +31,15 @@ function MenSection(props) {
         <div>
        <Mensec/>
        </div>
-        <div style={{display:"block",margin:"auto",padding:"20px"}}>
-        <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-1-1668681804.gif" alt="" />
+        <div style={{padding:"10px",width:"98%",margin:"auto",justifyContent:"center"}}>
+        <img width={"98%"} src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-1-1668681804.gif" alt="" />
         </div>
         <Link to={"/men-clothing"}>
            
-         <div  style={{width:"74%",height:"200px",display:"flex",margin:"auto",textDecoration:"underline white",color:"black"}}>
+         <div  style={{width:"80%",margin:"auto",display:"flex",textDecoration:"underline white",color:"black",justifyContent:"space-evenly"}}>
            <div>
              <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-thumbnail-men-1672724845.gif" alt="" width={"120px"} />
-             <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-8px",marginTop:"15px"}}>designs of the Week</p>
+             <p style={{textAlign:'center',height:"5px",marginRight:"9px",marginLeft:"-8px",marginTop:"15px"}}>Designs of the Week</p>
            </div>
            <div>
            <img src="https://images.bewakoof.com/uploads/grid/app/Thumbnail-Bestseller-Men-1668491213.jpg" alt="" width={"120px"} />
@@ -78,50 +78,30 @@ function MenSection(props) {
          
          </div>
          </Link>
-            <div>
+            <div >
              <h4 style={{textAlign:"center",marginTop:"50px"}}> POPULAR CATEGORIES</h4>
-            <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"10px"}}>
-                
-               <div>
-                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-printed-tees-1668772678.jpg" alt="" />
+            <div style={{width:"98%",margin:"auto",display:"flex",margin:"auto",marginTop:"10px",justifyContent:"space-around"}}>
+          
+                <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-printed-tees-1668772678.jpg" alt="" />
+               <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-7-1670503951.jpg" alt="" />
+             
+               <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-e-1670938024.jpg" alt="" />
+             
+               <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-2-1670503952.jpg" alt="" />
+              
+                <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-d-1670923576.jpg" alt="" />
+              
+               <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-1-1670503953.jpg" alt="" />
                
-               </div>
-               <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-7-1670503951.jpg" alt="" />
-               </div>
-               <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-e-1670938024.jpg" alt="" />
-               </div>
-               <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-2-1670503952.jpg" alt="" />
-               </div>
-               <div>
-                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-d-1670923576.jpg" alt="" />
-               </div>
-               <div>
-               <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-1-1670503953.jpg" alt="" />
-               </div>
                  
             </div>
-            <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px"}}>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-joggers-1668772677.jpg" alt="" />
-             </div>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-pyjamas-1668772679.jpg" alt="" />
-             </div>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-shirts-1668772679.jpg" alt="" />
-             </div>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-boxers-1668772675.jpg" alt="" />
-             </div>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-jeans-1668772677.jpg" alt="" />
-             </div>
-             <div>
-             <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-Shoes-1668754848.jpg" alt="" />
-             </div>
+            <div style={{width:"98%",display:"flex",margin:"auto",marginTop:"20px",justifyContent:"space-around"}}>
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-joggers-1668772677.jpg" alt="" />
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-pyjamas-1668772679.jpg" alt="" />
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-shirts-1668772679.jpg" alt="" />
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-boxers-1668772675.jpg" alt="" />
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-jeans-1668772677.jpg" alt="" />
+             <img width={"15%"} src="https://images.bewakoof.com/uploads/grid/app/category-box-new-Shoes-1668754848.jpg" alt="" />
              </div>
              <h4 style={{textAlign:"center",marginTop:"10px"}}>NEW ARRIVALS</h4>
              <div style={{ marginBottom:"-80px",marginTop:"-70px"}}>
@@ -204,12 +184,10 @@ function MenSection(props) {
             
               </Carousela>
               </div>
-             <div style={{marginBottom:"30px",marginTop:"-90px",marginLeft:"15px"}}>
-             <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="" />
+             <div style={{width:"100%",margin:"auto",marginBottom:"30px",marginTop:"-90px",justifyContent:"center" }}>
+             <img width={"100%"} src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="" />
              
              </div>
-
-
         </div>
     );
 }
