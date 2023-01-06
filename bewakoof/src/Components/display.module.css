@@ -17,6 +17,7 @@ text-decoration: underline white;
     display: flex;
     margin-top: -35px;
     gap: 10px;
+    align-items: center;
 }
 .price>*:last-child{
     text-decoration: line-through;

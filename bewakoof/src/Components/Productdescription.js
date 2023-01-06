@@ -34,7 +34,7 @@ function Productdescription() {
         </div>
         <div className={style.rating}>
           <div>
-          4.5
+          {arr[0].rating}
           </div>
           <img src="https://th.bing.com/th/id/R.0bda9208f015ef972b13e75bcd777451?rik=4C7auJOfe9AgVg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar%2fstar_PNG1592.png&ehk=CAYzonPiFDXphouQjxgJYfiEs6uRh1%2fJxdBPQvDVxtc%3d&risl=&pid=ImgRaw&r=0" width={"15px"}/>
         </div>
