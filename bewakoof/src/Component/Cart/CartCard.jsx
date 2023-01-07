@@ -8,8 +8,14 @@ export default function CartCard() {
 
         <div id={style.prod_text}>
             <p>Mens jacket</p>
-            <p>₹ 999</p>
+            <div id={style.price}>
+              <p>₹ 999</p> 
+              <strike>₹ 1800</strike>
+            </div>
             <p>You saved ₹1800!</p>
+            <div id={style.quan}>
+              <button>-</button>1<button>+</button>
+            </div>
         </div>
 
         <div id={style.imgDiv}>
@@ -20,7 +26,7 @@ export default function CartCard() {
 
       <div id={style.action}>
         <button>remove</button>
-        <button>wishllist</button>
+        <button>move to wishllist</button>
       </div>
     </div>
   )

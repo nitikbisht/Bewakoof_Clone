@@ -29,4 +29,87 @@ h2{
 #right_container {
     width: 40%;
     margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px ;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#coupon {
+    color: rgb(87,162,167);
+    background-color: rgb(235,246,245);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#coupon button {
+    background-color: rgb(235,246,245);
+    padding: 5px 10px;
+    border: 2px solid rgb(87,162,167);
+    border-radius: 5px;
+    color: rgb(87,162,167);
+    font-weight: bold;
+}
+#coupon button:hover{
+    color: rgb(235,246,245);
+    background-color: rgb(87,162,167);
+}
+
+#totalAmount{
+    border: 2px solid rgb(228, 204, 204) ;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#price_summary {
+    background-color: rgb(245,245,245);
+    margin: 10px 2px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+    /* border: 2px solid crimson; */
+}
+#price_summary h4 {
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#price_calc {
+    /* border: 2px solid teal; */
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+#price_calc div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.discount {
+    /* border: 2px solid red; */
+    padding: 5px 10px;
+}
+
+#final_price {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#final_price div:nth-child(1){
+    margin-top: 30px;
+}
+
+
+#final_price button {
+    background-color: rgb(87,162,167);
+    border: none;
+    color: white ;
+    border-radius: 5px;
+    padding: 10px 20px;
 }

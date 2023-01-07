@@ -26,6 +26,7 @@ function App() {
         <Route path='/men-section' element={<MenSection/>}/>
         <Route path='/women-section' element={<WomenSection/>}/>
       </Routes>
+      <Cart />
 
     </div>
    

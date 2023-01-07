@@ -7,6 +7,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(218, 208, 208);
+}
+
+#action button {
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 5px;
 }
 
 #action button {
@@ -36,9 +43,32 @@
     padding: 5px 10px;
 }
 
-#prod_text p:nth-child(2){
+#price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: -7px;
+}
+
+#price p{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: -15px;
     margin-bottom: 0px;
+}
+#prod_text p:nth-child(3){
+    color: green;
+}
+
+#prod_text p {
+    margin-top: 0px;
+}
+
+#quan button {
+    padding: 2px 10px;
+    margin: 5px 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
 }
