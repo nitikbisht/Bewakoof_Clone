@@ -3,6 +3,7 @@ import dat from "../db.json"
 import ProductFilter from './ProductFilter'
 import style from "./MenClothing.module.css"
 import Display from './Display'
+// import Footer from '../landing/Footer'
 
 
 function MenClothing() {
@@ -21,9 +22,10 @@ function MenClothing() {
               <div className={style.filter}>
                   {/* <ProductFilter/> */}
                   <div>
-                      <h5>Filter</h5>
+                      <h3 style={{color:"rgba(45,45,45,.5)"}}>Filter</h3>
                   </div>
                   <div>
+                    <h4>PRICE</h4>
                   <div style={{color:"rgba(45,45,45,.7)",cursor:"pointer",padding:"10px",lineHeight:"25px",borderBottom:"2px solid lightgrey"}}>
                         <p >Below 300</p>
                         <p>300 to 500</p>
@@ -56,7 +58,7 @@ function MenClothing() {
               </div>
               <div className={style.main}>
                   <div >
-                      <h5>SORT BY</h5>
+                      <h3 style={{color:"rgba(45,45,45,.5)"}}>SORT BY</h3>
                       <select onChange={(e) => {
                           let nameorder=e.target.value;
                           let arr=dat.men
