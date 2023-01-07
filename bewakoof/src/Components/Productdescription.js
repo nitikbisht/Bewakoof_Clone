@@ -54,9 +54,14 @@ function Productdescription() {
             <img src="https://th.bing.com/th/id/R.435444c86682cce8bd873882488ba5fa?rik=xi14PvSJneLJBg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_311148.png&ehk=gvhIQhsORaOoAL3C1nRE8m18kbmW6H5vaVjA0IRFKXM%3d&risl=&pid=ImgRaw&r=0" width={"15px"}/>
             <div>ADD TO BAG</div>
             </button>:
-            <button style={{height:"40px", backgroundColor:"#ffd84d",border:"1px solid #d6d6d6",alignItems:"center",justifyContent:"center",display:"flex",gap:"8px"}}>
+            <Link to={"/bag"}>
+            <button style={{height:"40px", backgroundColor:"#ffd84d",textDecoration:"underline #ffd84d ",border:"1px solid #d6d6d6",alignItems:"center",justifyContent:"center",display:"flex",gap:"8px",width:"100%"}}>
               <img src="https://th.bing.com/th/id/R.31822d029a7c7ab165498083fb555f81?rik=aytzJVKxZGWFRg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_98582.png&ehk=ZdzrfZIZtoxw2d6FbFfImZuDSeSblb1p1XfHxj0vdm8%3d&risl=&pid=ImgRaw&r=0" width={"15px"}/>
-              <div>GO TO CART</div></button>}
+              <div>GO TO CART</div>
+              </button>
+              </Link>
+              }
+            
           <button style={{height:"40px", backgroundColor:"white",border:"1px solid #d6d6d6",alignItems:"center",justifyContent:"center",display:"flex" }}>
           <img src="https://cdn0.iconfinder.com/data/icons/gender-thinline-set/144/Love-512.png" width={"35px"}/>
            <div>WISHLIST</div></button>

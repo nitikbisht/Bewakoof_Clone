@@ -25,8 +25,10 @@ function App() {
         <Route path='/men-clothing/:id' element={<Productdescription/>}/>
         <Route path='/men-section' element={<MenSection/>}/>
         <Route path='/women-section' element={<WomenSection/>}/>
+        <Route path='/bag' element={<Cart />}/>
+        
       </Routes>
-      <Cart />
+      
 
     </div>
    
