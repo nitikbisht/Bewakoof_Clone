@@ -24,6 +24,7 @@ function MenClothing() {
                       <h5>Filter</h5>
                   </div>
                   <div>
+                    <h4>PRICE</h4>
                   <div style={{color:"rgba(45,45,45,.7)",cursor:"pointer",padding:"10px",lineHeight:"25px",borderBottom:"2px solid lightgrey"}}>
                         <p >Below 300</p>
                         <p>300 to 500</p>
