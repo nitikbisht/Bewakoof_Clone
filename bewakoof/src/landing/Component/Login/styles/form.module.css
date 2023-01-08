@@ -12,6 +12,13 @@
   .Form {
     padding: 0px 20%;
   }
+  .input{
+    width: 95%;
+    padding: 5px !important;
+    margin-bottom: 8px;
+    font-size: 25px !important;
+    /* border: none; */
+  }
   .Button {
     background-color: #47a5a9 !important;
     width: 100%;
@@ -71,6 +78,7 @@
     padding: 10px;
     text-align: center;
     font-size: 14px;
+    margin-top: 15px;
   }
   
   .Foot > span {

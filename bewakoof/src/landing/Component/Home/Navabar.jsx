@@ -52,7 +52,7 @@ const Navabar = () => {
           <div style={{display:"flex",gap:"20px",cursor:"pointer"}}>
             
             <h4 onClick={()=>navigate("/men-clothing")}>MEN</h4>
-            <h4 onClick={()=>navigate("/women-clothing")}>WOMEN</h4>
+            <h4 onClick={()=>navigate("/women-section")}>WOMEN</h4>
             <h4>MOBILE COVER</h4>
           </div>
           <div>
