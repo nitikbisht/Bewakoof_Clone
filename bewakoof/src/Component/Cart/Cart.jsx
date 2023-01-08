@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import style from "./cart.module.css"
 import CartCard from './CartCard'
 
@@ -7,7 +8,9 @@ export default function Cart() {
     <div>
 
       <div id={style.cart_nav}>
+        <Link to={"/"}>
         <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="logo" />
+        </Link>
       </div>
       <hr />
       <h2>My bag <span>5 items</span></h2>
