@@ -65,7 +65,7 @@ const Navabar = () => {
           <img src="https://cdn0.iconfinder.com/data/icons/gender-thinline-set/144/Love-512.png" width={"35px"}/>
           </div>
           <div style={{marginLeft:"-30px",cursor:"pointer"}} >
-            <Link to={"/bag"}>
+            <Link to={isAuthenticated?"/bag":"/login"}>
           <img src="https://th.bing.com/th/id/R.31822d029a7c7ab165498083fb555f81?rik=aytzJVKxZGWFRg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_98582.png&ehk=ZdzrfZIZtoxw2d6FbFfImZuDSeSblb1p1XfHxj0vdm8%3d&risl=&pid=ImgRaw&r=0" width={"25px"}/>
             </Link>
           </div>
