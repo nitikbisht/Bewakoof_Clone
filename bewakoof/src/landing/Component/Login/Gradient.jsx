@@ -5,7 +5,8 @@ const Gradient = () => {
   return (
     <div className={styles.Gradient}>
       <div className={styles.First}>
-        <h2>Welcome to the world of Bewakoof!</h2>
+        <h3>Welcome to the world of Bewakoof!</h3>
+        {/* <h2>Welcome to the world of Bewakoof!</h2> */}
       </div>
       <div>
         <img

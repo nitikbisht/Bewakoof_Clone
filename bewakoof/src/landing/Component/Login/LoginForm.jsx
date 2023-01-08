@@ -4,9 +4,9 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { loginAPI } from "../../Store/Auth/auth.actions";
 import { useDispatch, useSelector } from "react-redux";
-import { AiOutlineMail } from "react-icons/ai";
-import { FcGoogle } from "react-icons/fc";
-import { BsFacebook } from "react-icons/bs";
+// import { AiOutlineMail } from "react-icons/ai";
+// import { FcGoogle } from "react-icons/fc";
+// import { BsFacebook } from "react-icons/bs";
 import SuccessModal from "./Modal";
 
 const LoginForm = () => {
@@ -35,6 +35,7 @@ const LoginForm = () => {
   };
   return (
     <div>
+      
       <SuccessModal
         show={show}
         handleClose={handleClose}
@@ -86,16 +87,16 @@ const LoginForm = () => {
           </div>
         </div>
         <button className={styles.authButton}>
-          <AiOutlineMail />
+          {/* <AiOutlineMail /> */}
           Continue With Email
         </button>
         <div className={styles.auth}>
           <button>
-            <FcGoogle />
+            {/* <FcGoogle /> */}
             Google
           </button>
           <button>
-            <BsFacebook />
+            {/* <BsFacebook /> */}
             Facebook
           </button>
         </div>
