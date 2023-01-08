@@ -4,9 +4,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { loginAPI } from "../../Store/Auth/auth.actions";
 import { useDispatch, useSelector } from "react-redux";
-// import { AiOutlineMail } from "react-icons/ai";
-// import { FcGoogle } from "react-icons/fc";
-// import { BsFacebook } from "react-icons/bs";
 import SuccessModal from "./Modal";
 
 const LoginForm = () => {
@@ -51,7 +48,7 @@ const LoginForm = () => {
             <Form.Control
               type="email"
               placeholder="Enter email"
-              className="p-3"
+              className={styles.input}
               onChange={handleChange}
               name="email"
               required
@@ -60,7 +57,7 @@ const LoginForm = () => {
 
           <Form.Group className="mb-4" controlId="formBasicPassword">
             <Form.Control
-              className="p-3"
+              className={styles.input}
               type="password"
               placeholder="Password"
               onChange={handleChange}

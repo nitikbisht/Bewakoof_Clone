@@ -10,7 +10,7 @@ const Login = () => {
   const { isAuthenticated } = useSelector((state) => state.auth.data);
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/homepage");
+      navigate("/");
     }
   }, [isAuthenticated]);
   return (<>
