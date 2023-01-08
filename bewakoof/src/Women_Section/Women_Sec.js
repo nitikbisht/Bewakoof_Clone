@@ -4,6 +4,7 @@ import Womensec from './WomenSec';
 import Carousela from './Wminicarousel';
 import "../MAN_SECTION/home.css"
 import "../MAN_SECTION/mini.css"
+import Navabar from '../landing/Component/Home/Navabar';
 function MenSection(props) {
     const[product,setProduct]=useState([])
     //  const[products,setProducts]=useState([])
@@ -26,7 +27,7 @@ function MenSection(props) {
       }
     return (
         <div>
-            
+            <Navabar/>
         <h1 style={{textAlign:"center",color:"teal"}}>Women's Section</h1>
         <div>
        <Womensec/>
