@@ -1,22 +1,35 @@
 import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import data from "../db.json"
 import style from "./description.module.css"
 import Navabar from '../landing/Component/Home/Navabar'
 import Footer from '../landing/Component/Home/Footer'
+import { useDispatch, useSelector } from 'react-redux'
+import myaction from '../landing/Store/Cart/action'
 function Productdescription() {
+  const navigate = useNavigate();
     const {id}=useParams()
     // console.log(id)
     const arr=data.men.filter((el)=>{
       return el.id==id
     })
+    const { isAuthenticated } = useSelector((state) => state.auth.data);
     const[state,setState]=useState(arr[0].image[0])
+    const dispatch=useDispatch()
     const[bag,setBag]=useState(true)
-    console.log(arr)
+    // console.log(arr)
     let off=((arr[0].originalprice-arr[0].price)/arr[0].originalprice)*100
     off=Math.round(off)
     const handeladd=()=>{
-      setBag(false)
+      if(isAuthenticated){
+        setBag(false)
+        // console.log(arr[0])
+        myaction(arr[0],dispatch)
+      }
+      else{
+navigate("/login")
+      }
+      
     }
   return (<>
       <Navabar/>

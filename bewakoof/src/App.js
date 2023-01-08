@@ -12,7 +12,7 @@ import MenSection from './MAN_SECTION/MenSection';
 import WomenSection from "./Women_Section/Women_Sec";
 // import Home from "./landing/Pages/Home"
 import Men  from "./landing/Pages/CategoriesMen"
-import Navabar from "./landing/Component/Home/Navabar";
+// import Navabar from "./landing/Component/Home/Navabar";
 import Login from './login/Login';
 
 
