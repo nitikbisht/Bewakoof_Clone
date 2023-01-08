@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import data from "../db.json"
 import style from "./description.module.css"
-
+import Navabar from '../landing/Component/Home/Navabar'
+import Footer from '../landing/Component/Home/Footer'
 function Productdescription() {
     const {id}=useParams()
     // console.log(id)
@@ -17,7 +18,8 @@ function Productdescription() {
     const handeladd=()=>{
       setBag(false)
     }
-  return (
+  return (<>
+      <Navabar/>
     <div className={style.container}>
       <div  className={style.smallimg}>
         {arr[0].image.map((el,ind)=>{
@@ -67,10 +69,19 @@ function Productdescription() {
            <div>WISHLIST</div></button>
         </div>
         <div>
-          
+          <h3>Product Description</h3>
+          <p>If you're in awe of the iconic nine-tailed fox,
+             then this Kyuubi Mode Men's Oversized Full Sleeve T-Shirt is for you.
+              Match this black t-shirt with boots, a jacket & cropped trousers for a rugged look.
+              <br/>
+                <br/>
+                Country of Origin - India
+                </p>
         </div>
       </div>
     </div>
+    <Footer/>
+              </>
   )
 }
 

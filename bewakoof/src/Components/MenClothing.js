@@ -4,14 +4,16 @@ import ProductFilter from './ProductFilter'
 import style from "./MenClothing.module.css"
 import Display from './Display'
 // import Footer from '../landing/Footer'
-
+import Navabar from '../landing/Component/Home/Navabar'
+import Footer from '../landing/Component/Home/Footer'
 
 function MenClothing() {
     const[data,setData]=useState(dat.men)
     const[sort,setSort]=useState(1)
     const[filter,setFilter]=useState("")
     // console.log(data)
-  return (
+  return (<>
+        <Navabar/>
     <div className={style.container}>
           <div className={style.top}>
               <h1>MEN CLOTHING </h1>
@@ -131,14 +133,16 @@ function MenClothing() {
                   <div className={style.display}>
                     {/* {console.log(data)} */}
                       {data.map((el, ind) => {
-                        // console.log(el)
+                          // console.log(el)
                           return <Display key={ind + 1} data={el} />
-                      })}
+                        })}
                   </div>
               </div>
           </div>
 
     </div>
+    <Footer/>
+                        </>
   )
 }
 

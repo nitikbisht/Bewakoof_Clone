@@ -1,0 +1,112 @@
+{
+    "discountW": [
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-Indofusion-1673004774.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2023-winterwear-common-uberchic-1673012669.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-buy3at899-1672668872.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-softcottomPJ-Common-1672319772.jpg"
+    ],
+    "Slider1M": [
+      "https://images.bewakoof.com/uploads/grid/app/winter-new-common-banner-1x1-1673012119.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/Homepage-1X1-WinterJackets-common-1672754392.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/full-sleeve-men-1673012118.jpg"
+    ],
+    "PopularM": [
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-bestseller-1671624963.jpg",
+        "cat": "Bestseller"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-New-Arrivals-Common-1668508339.jpg",
+        "cat": "New Arrivals"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/hotdeals-2-1668491210.jpg",
+        "cat": "Hot Deals"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/Thumbnail-Collabs-Common-1668508338.jpg",
+        "cat": "Official Collaborations"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668508337.jpg",
+        "cat": "Last Sizes Left"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-copy-1669723278.jpg",
+        "cat": "Plus Size"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/me-shirt-thumbnail-1668508337.jpg",
+        "cat": "Customization"
+      },
+      {
+        "img": "https://images.bewakoof.com/uploads/grid/app/image-1668598708.png",
+        "cat": "Coupon Offers"
+      }
+    ],
+    
+    "mapM": [
+      "https://images.bewakoof.com/uploads/grid/app/category-box-printed-tshirt-men-1672915214.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Oversize-tshirt-1672915214.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Sweatshirt---Hoodies-1672915219.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Sweater-1673010262.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Jackets-1672915210.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Full-Sleeve-Tshirt-1673010261.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-new-printed-tshirts-1668773246.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Oversize-tshirt-women-1672915214.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Sweatshirt---Hoodies-women-1673010262.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Jackets-women-1673010261.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Sweater-women-1672915218.png",
+      "https://images.bewakoof.com/uploads/grid/app/category-box-Boyfriend-Tshirt-women-1672915204.png"
+    ],
+    "Slider2M": [
+      "https://images.bewakoof.com/uploads/grid/app/Revised-1672676580.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/cb-winter--1672744267.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/hot-new-evrythng-1x1-01-1672806265.gif"
+    ],
+    "BestsellerM": [
+      {
+        "img": "https://images.bewakoof.com/t320/men-s-black-the-view-graphic-printed-oversized-t-shirt-565908-1672383896-1.jpg",
+        "price": "449",
+        "cut": "999"
+      },
+      {
+        "img": "https://images.bewakoof.com/t320/men-s-black-the-warrior-king-graphic-printed-oversized-t-shirt-565931-1672377650-1.jpg",
+        "price": "539",
+        "cut": "1299"
+      },
+      {
+        "img": "https://images.bewakoof.com/t320/men-s-black-find-your-true-peace-graphic-printed-oversized-t-shirt-565905-1672410408-1.jpg",
+        "price": "359",
+        "cut": "1299"
+      },
+      {
+        "img": "https://images.bewakoof.com/t320/women-white-red-striped-t-shirt-544726-1670414721-1.jpg",
+        "price": "699",
+        "cut": "1299"
+      },
+      {
+        "img": "https://images.bewakoof.com/t320/women-s-aop-short-top-507974-1670255745-1.jpg",
+        "price": "539",
+        "cut": "1299"
+      }
+    ],
+    "BargainM": [
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-vests-men21-1661708908.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-pyjamas-1664210626.png",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-boxers-men1-1664210626.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-sliders---Copy-1664210627.jpg"
+    ],
+    "BargainW": [
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-banner-3-1661708906.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-w-varsity-tees2-1664210628.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-w-shorts1-1664210627.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-w-sliders---Copy-1664210628.jpg"
+    ],
+    "StupidM": [
+      "https://images.bewakoof.com/uploads/grid/app/plus-size-mid-banner-1671788992.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-2022-jogger-common-1-1672062223.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-knitted-polo-tees-1671771476.jpg",
+      "https://images.bewakoof.com/uploads/grid/app/new-mid-banner-boyfriend-tees-1671791499.jpg"
+    ]
+  }

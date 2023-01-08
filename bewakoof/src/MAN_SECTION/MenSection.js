@@ -5,6 +5,10 @@ import Carousela from './Minicarousel';
 import "./home.css"
 import "./mini.css"
 import { Link } from 'react-router-dom';
+import Navabar from '../landing/Component/Home/Navabar';
+import Footer from '../landing/Component/Home/Footer';
+
+
 function MenSection(props) {
     const[product,setProduct]=useState([])
     //  const[products,setProducts]=useState([])
@@ -27,6 +31,7 @@ function MenSection(props) {
       }
     return (
         <div>
+          <Navabar/>
         <h1 style={{textAlign:"center",color:"teal"}}>Men's Section</h1>
         <div>
        <Mensec/>
@@ -188,6 +193,7 @@ function MenSection(props) {
              <img width={"100%"} src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="" />
              
              </div>
+             <Footer/>
         </div>
     );
 }

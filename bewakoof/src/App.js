@@ -10,8 +10,9 @@ import React from 'react';
 import MenSection from './MAN_SECTION/MenSection';
 
 import WomenSection from "./Women_Section/Women_Sec";
-
-
+// import Home from "./landing/Pages/Home"
+import Men  from "./landing/Pages/CategoriesMen"
+import Navabar from "./landing/Component/Home/Navabar";
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
   return (
 
     <div className="App">
+      
       <Routes>
-        {/* <Route path='/' element={}/> */}
+        <Route path="/" element={<Men />} />
         <Route path='/men-clothing' element={<MenClothing/>}/>
         <Route path='/men-clothing/:id' element={<Productdescription/>}/>
         <Route path='/men-section' element={<MenSection/>}/>
