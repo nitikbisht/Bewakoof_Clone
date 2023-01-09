@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import Gradient from "../landing/Component/Login/Gradient";
 import LoginForm from "../landing/Component/Login/LoginForm";
 import styles from "./Login.module.css";
@@ -11,6 +11,7 @@ const Login = () => {
   useEffect(() => {
     if (isAuthenticated) {
       navigate("/");
+      // <Navigate to={"/"}/>
     }
   }, [isAuthenticated]);
   return (<>
