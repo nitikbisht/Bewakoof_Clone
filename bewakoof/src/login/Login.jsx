@@ -16,7 +16,7 @@ const Login = () => {
   return (<>
     <Navabar/>
     <div className={styles.Login}>
-      <Gradient />
+      <Gradient/>
       <LoginForm />
     </div>
   </>

@@ -5,10 +5,11 @@ import style from "./description.module.css"
 import Navabar from '../landing/Component/Home/Navabar'
 import Footer from '../landing/Component/Home/Footer'
 import { useDispatch, useSelector } from 'react-redux'
-import myaction from '../landing/Store/Cart/action'
+import {myaction} from '../landing/Store/Cart/action'
 function Productdescription() {
   const navigate = useNavigate();
     const {id}=useParams()
+    const { cart,visited } = useSelector((state) => state.cart);
     // console.log(id)
     const arr=data.men.filter((el)=>{
       return el.id==id
