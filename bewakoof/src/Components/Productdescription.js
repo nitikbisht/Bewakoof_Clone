@@ -6,11 +6,12 @@ import Navabar from '../landing/Component/Home/Navabar'
 import Footer from '../landing/Component/Home/Footer'
 import { useDispatch, useSelector } from 'react-redux'
 import {myaction} from '../landing/Store/Cart/action'
+import Display from './Display'
 function Productdescription() {
   const navigate = useNavigate();
     const {id}=useParams()
     const { cart,visited } = useSelector((state) => state.cart);
-    // console.log(id)
+    console.log(visited)
     const arr=data.men.filter((el)=>{
       return el.id==id
     })
@@ -93,7 +94,18 @@ navigate("/login")
                 </p>
         </div>
       </div>
+      
     </div>
+    {visited.length>1?<div style={{width:"80%",padding:"15px",margin:"auto",marginBottom:"50px"}}>
+      <h3>RECENTLY VIEWED</h3>
+      <div style={{display:"flex",overflow:"hidden"}}>
+              {visited.map((el,ind)=>{
+                console.log(el)
+                return <Display key={ind+1} data={el}/>
+              })}
+      </div>
+    </div>:""}
+    
     <Footer/>
               </>
   )
