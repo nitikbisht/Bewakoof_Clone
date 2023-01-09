@@ -44,7 +44,14 @@ export default function Cart() {
             <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>UPI</h4></div>
             <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Net Banking</h4></div>
           </div>
-          <div>pay</div>
+          <div style={{width:"100%",padding:"20px",paddingTop:"50px"}}>
+            <input style={{width:"100%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"Card Number"}/>
+            <input style={{width:"65%",height:"30px",marginBottom:"16px",marginRight:"25px",paddingLeft:"10px"}} placeholder={"Valid Through"}/>
+            <input style={{width:"20%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"CVV"} type={"password"} maxLength={3}/>
+            <input style={{width:"100%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"Name On Card"}/>
+            <p style={{marginTop:"15px"}}>This transaction you make is totally secure.</p>
+            <button style={{width:"80%",height:"35px",marginLeft:"10%",backgroundColor:"black",color:"white"}}>PAY</button>
+          </div>
         </div>
 
         </div>
