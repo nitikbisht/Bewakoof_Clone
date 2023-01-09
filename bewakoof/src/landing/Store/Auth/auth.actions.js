@@ -11,7 +11,7 @@ export const loginAPI = (creds) => async (dispatch) => {
   });
   try {
     let response = await axios.post(
-      "https://check-lr1yrg4f5-hitesht4.vercel.app/user/login",
+      "https://reqres.in/api/login",
       creds
     );
     dispatch({

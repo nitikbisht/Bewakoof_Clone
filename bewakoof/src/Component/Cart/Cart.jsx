@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
 import style from "./cart.module.css"
@@ -14,6 +14,12 @@ export default function Cart() {
   const [coupon,setCoupon]=useState(false)
   const[total,setTotal]=useState(0)
   const[sub,setSub]=useState(0)
+  const[disc,setDisc]=useState("")
+  const[dis,setDis]=useState(false)
+  const[minus,setMinus]=useState(0)
+  useEffect(()=>{
+    
+  },[coupon,total,sub])
   const handeltotal=(n)=>{
     setTotal(total=>total+n)
     console.log(n)
@@ -21,6 +27,7 @@ export default function Cart() {
   const handelsub=(n)=>{
     setSub(sub=>sub+n)
   }
+  
   return (
     <div>
 
@@ -56,8 +63,23 @@ export default function Cart() {
           </div>
 
           <div id={style.coupon}>
-            {coupon?<input placeholder='Coupon Code' style={{height:"25px",width:"80%"}}/>:<h5>Have a coupon/gift card ?</h5>}
-            {coupon?<button >APPLY</button>:<button onClick={()=>{setCoupon(true)}}>APPLY</button>}
+            {coupon?<input placeholder='Coupon Code' style={{height:"25px",width:"80%"}} disabled={dis?true:false} onChange={(e)=>{setDisc(e.target.value)}}/>:<h5>Have a coupon/gift card ?</h5>}
+            {coupon?<button onClick={()=>{
+              if(disc==="NEW200"){
+                if(sub>999){
+                  // setSub(sub=>sub-200)
+                  setDis(true)
+                  setMinus(200)
+                }
+              }
+              else if(disc==="NEW20"){
+                if(sub>499){
+                  setMinus(Math.round(sub/5))
+                  // setSub(sub=>sub-minus)
+                  setDis(true)
+                }
+              }
+            }} disabled={dis?true:false}>APPLY</button>:<button onClick={()=>{setCoupon(true)}}>APPLY</button>}
             
           </div>
 
@@ -86,6 +108,10 @@ export default function Cart() {
                 <p>Subtotal</p>
                 <p>₹ {sub}</p>
               </div>
+              <div>
+                <p>Coupon Discount</p>
+                <p>₹ -{minus}</p>
+              </div>
             </div>
 
             <hr />
@@ -93,7 +119,7 @@ export default function Cart() {
             <div id={style.final_price}>
               <div>
                 <p>Total</p>
-                <p>₹ {sub>500?sub:sub+50}</p>
+                <p>₹ {sub>500?sub-minus:sub+50-minus}</p>
               </div>
               <div>
                 <button onClick={()=>navigate("/address")}>

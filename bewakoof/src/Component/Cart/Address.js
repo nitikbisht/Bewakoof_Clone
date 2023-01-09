@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
@@ -13,6 +13,7 @@ export default function Cart() {
   const [coupon,setCoupon]=useState(false)
   const[total,setTotal]=useState(0)
   const[sub,setSub]=useState(0)
+  
   const handeltotal=(n)=>{
     setTotal(total=>total+n)
     console.log(n)
