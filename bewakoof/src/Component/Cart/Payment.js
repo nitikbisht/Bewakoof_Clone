@@ -7,7 +7,7 @@ import CartCard from './CartCard'
 import Footerimg from './Footerimg';
 import {Store} from "../../landing/Store/Store"
 export default function Cart() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
   const { cart,visited } = useSelector((state) => state.cart);
   console.log(visited);
   // Store.subscribe()
@@ -30,39 +30,30 @@ export default function Cart() {
         </Link>
       </div>
       <hr />
-      <h2>My bag <span>{cart.length} item(s)</span></h2>
+      
       <div id={style.main_container}>
         
-        <div id={style.left_container}>
+        <div id={style.left_container} >
+        <div className='form'>
+        <h2>SHIPPING ADDRESS</h2>
+        <div ><input placeholder='First Name'/><input placeholder='Last Name'/></div>
+        <div ><input placeholder='Address'/></div>
+        <div ><input placeholder='City'/><input placeholder='State'/><input placeholder='Pin Code'/></div>
+        <div ><input placeholder='Phone'/></div>
+        <div><Link> Return</Link><Link to={'/payment'}><button >CONTINUE TO PAYMENT</button></Link></div>
+        </div>
+            <div style={{display:"none"}}>
+
           {cart.map((el,ind)=>{
-            
-            return <CartCard key={ind+1} data={el} total={handeltotal} sub={handelsub} ind={ind}/>
-          })}
+              
+              return <CartCard key={ind+1} data={el} total={handeltotal} sub={handelsub} ind={ind}/>
+            })}
+            </div>
         
         </div>
 
         <div id={style.right_container}>
-
-          <div className={style.discount}>
-            <p>
-            Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code -NEW200
-            </p>
-          </div>
-
-          <div className={style.discount} >
-            <p>
-            Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!
-            </p>
-          </div>
-
-          <div id={style.coupon}>
-            {coupon?<input placeholder='Coupon Code' style={{height:"25px",width:"80%"}}/>:<h5>Have a coupon/gift card ?</h5>}
-            {coupon?<button >APPLY</button>:<button onClick={()=>{setCoupon(true)}}>APPLY</button>}
-            
-          </div>
-
           <div id={style.totalAmount}>
-
             <div id={style.price_summary}>
               <h4>
                 PRICE SUMMARY 
@@ -76,7 +67,7 @@ export default function Cart() {
               </div>
               <div>
                 <p>Shipping Charges </p>
-                <p>{sub>500?"Free":50}</p>
+                {sub==0?<p>0</p>:<p>{sub>500?"Free":50}</p>}
               </div>
               <div>
                 <p>Bag Discount</p>
@@ -91,14 +82,9 @@ export default function Cart() {
             <hr />
 
             <div id={style.final_price}>
-              <div>
+              <div style={{display:"flex",justifyContent:"space-between",width:"100%"}}>
                 <p>Total</p>
-                <p>₹ {sub>500?sub:sub+50}</p>
-              </div>
-              <div>
-                <button onClick={()=>navigate("/address")}>
-                  ADD ADDRESS
-                </button>
+                {sub==0?<p>0</p>:<p>₹ {sub>500?sub:sub+50}</p>}
               </div>
             </div>
 
@@ -107,7 +93,7 @@ export default function Cart() {
         </div>
 
       </div>
-        <Footerimg/>
+        {/* <Footerimg/> */}
     </div>
   )
 }

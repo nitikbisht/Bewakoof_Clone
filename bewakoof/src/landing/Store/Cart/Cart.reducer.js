@@ -11,6 +11,10 @@
     else if(type==="VISIT"){
       return {...state,visited:[...state.visited,payload]}
     }
+    else if(type==="REMOVE"){
+      console.log(state.cart[payload])
+      return {...state,cart:[...state.cart,state.cart.splice(payload,1)]}
+    }
     return state
     
   };

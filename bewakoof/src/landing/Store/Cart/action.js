@@ -1,10 +1,23 @@
 
 import React from 'react'
 
-const myaction=(payload,dispatch)=>{
+export const myaction=(payload,dispatch)=>{
   dispatch({
       type:"ADD TO CART",
       payload
   })
   }
-  export default myaction
+  
+  export const visiting=(payload,dispatch)=>{
+    dispatch({
+        type:"VISIT",
+        payload
+    })
+    }
+    export const remove=(payload,dispatch)=>{
+      dispatch({
+          type:"REMOVE",
+          payload
+      })
+      }
+    

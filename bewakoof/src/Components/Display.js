@@ -1,11 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import style from "./display.module.css"
+import {visiting} from "../landing/Store/Cart/action"
 function Display({data}) {
   // console.log(data)
-  return (
+  const dispatch=useDispatch()
+  return (<>
   <Link to={`/men-clothing/${data.id}` }>
-    <div className={style.display}>
+    <div className={style.display} onClick={()=>{
+visiting(data,dispatch)
+    }}>
       <img src={data.image[0]} className='image' width={"100%"}/>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
         <h5>Bewakoof</h5>
@@ -18,6 +23,7 @@ function Display({data}) {
       </div>
     </div>
   </Link>
+  </>
   )
 }
 

@@ -2,9 +2,11 @@ import React from 'react' ;
 import { useEffect } from 'react';
 import { useState } from 'react';
 import style from "./CartCard.module.css" ;
-
+import {remove} from "../../landing/Store/Cart/action"
+import { useDispatch } from 'react-redux';
 export default function CartCard({data,total,sub,ind}) {
   const[quan,setQuan]=useState(1)
+  const dispatch=useDispatch()
   useEffect(()=>{
     total(data.originalprice)
     sub(data.price)
@@ -38,7 +40,9 @@ export default function CartCard({data,total,sub,ind}) {
       </div>
 
       <div id={style.action}>
-        <button>remove</button>
+        <button onClick={()=>{
+          remove(ind,dispatch)
+        }}>remove</button>
         <button>move to wishllist</button>
       </div>
     </div>
