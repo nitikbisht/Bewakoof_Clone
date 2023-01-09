@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
-import style from "./cart.module.css"
+import style from "./Payment.module.css"
 import CartCard from './CartCard'
 import Footerimg from './Footerimg';
 import {Store} from "../../landing/Store/Store"
@@ -35,12 +35,18 @@ export default function Cart() {
         
         <div id={style.left_container} >
         <div className='form'>
-        <h2>SHIPPING ADDRESS</h2>
-        <div ><input placeholder='First Name'/><input placeholder='Last Name'/></div>
-        <div ><input placeholder='Address'/></div>
-        <div ><input placeholder='City'/><input placeholder='State'/><input placeholder='Pin Code'/></div>
-        <div ><input placeholder='Phone'/></div>
-        <div><Link> Return</Link><Link to={'/payment'}><button >CONTINUE TO PAYMENT</button></Link></div>
+        <h2>Choose your payment method</h2>
+        <div style={{width:"80%",margin:"auto",display:"flex",height:"400px",border:"1px solid lightgrey"}}>
+          <div style={{width:"30%",display:"flex",flexDirection:"column",height:"100%"}}>
+            <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Credit Card</h4></div>
+            <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Debit Card</h4></div>
+            <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Cash On Delivery</h4></div>
+            <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>UPI</h4></div>
+            <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Net Banking</h4></div>
+          </div>
+          <div>pay</div>
+        </div>
+
         </div>
             <div style={{display:"none"}}>
 
