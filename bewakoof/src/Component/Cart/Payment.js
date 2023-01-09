@@ -49,7 +49,6 @@ export default function Cart() {
             <button style={{width:"80%",height:"35px",marginLeft:"10%",backgroundColor:"black",color:"white"}} onClick={()=>navigate("/")}>PAY ₹ {data.total}</button>
           </div>
         </div>
-
         </div>
         
         </div>
