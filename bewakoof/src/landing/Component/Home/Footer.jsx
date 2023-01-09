@@ -2,11 +2,7 @@ import React from "react";
 import Footer2 from "./Footer2";
 import styles from "./styles/Footer.module.css";
 import scrn from "../../Assets/scr.png";
-// import { RiFacebookBoxLine, RiInstagramLine } from "react-icons/ri";
-// import { BsApple, BsSnapchat, BsCash } from "react-icons/bs";
-// import { FiTwitter } from "react-icons/fi";
-// import { ImPinterest2 } from "react-icons/im";
-// import { GiReturnArrow } from "react-icons/gi";
+
 
 const Footer = () => {
   return (

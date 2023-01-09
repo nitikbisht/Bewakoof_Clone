@@ -1,12 +1,24 @@
 import React from 'react'
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import style from "./cart.module.css"
 import CartCard from './CartCard'
+import Footerimg from './Footerimg';
 
 export default function Cart() {
   const { cart,visited } = useSelector((state) => state.cart);
   console.log(cart);
+  const [coupon,setCoupon]=useState(false)
+  const[total,setTotal]=useState(0)
+  const[sub,setSub]=useState(0)
+  const handeltotal=(n)=>{
+    setTotal(total=>total+n)
+    console.log(n)
+  }
+  const handelsub=(n)=>{
+    setSub(sub=>sub+n)
+  }
   return (
     <div>
 
@@ -16,11 +28,15 @@ export default function Cart() {
         </Link>
       </div>
       <hr />
-      <h2>My bag <span>5 items</span></h2>
+      <h2>My bag <span>{cart.length} item(s)</span></h2>
       <div id={style.main_container}>
         
         <div id={style.left_container}>
-        <CartCard/>
+          {cart.map((el,ind)=>{
+            
+            return <CartCard data={el} total={handeltotal} sub={handelsub} ind={ind}/>
+          })}
+        
         </div>
 
         <div id={style.right_container}>
@@ -38,10 +54,9 @@ export default function Cart() {
           </div>
 
           <div id={style.coupon}>
-            <h5>
-              Have a coupon/gift card ?
-            </h5>
-            <button>APPLY</button>
+            {coupon?<input placeholder='Coupon Code' style={{height:"25px",width:"80%"}}/>:<h5>Have a coupon/gift card ?</h5>}
+            {coupon?<button >APPLY</button>:<button onClick={()=>{setCoupon(true)}}>APPLY</button>}
+            
           </div>
 
           <div id={style.totalAmount}>
@@ -55,19 +70,19 @@ export default function Cart() {
             <div id={style.price_calc}>
               <div>
                 <p>Total MRP (Incl. of taxes)</p>
-                <p>₹ 11845</p>
+                <p>₹ {total}</p>
               </div>
               <div>
                 <p>Shipping Charges </p>
-                <p>FREE</p>
+                <p>{sub>500?"Free":50}</p>
               </div>
               <div>
                 <p>Bag Discount</p>
-                <p>₹ -500</p>
+                <p>₹ -{total-sub}</p>
               </div>
               <div>
                 <p>Subtotal</p>
-                <p>₹ 5000</p>
+                <p>₹ {sub}</p>
               </div>
             </div>
 
@@ -76,7 +91,7 @@ export default function Cart() {
             <div id={style.final_price}>
               <div>
                 <p>Total</p>
-                <p>₹ 5000</p>
+                <p>₹ {sub>500?sub:sub+50}</p>
               </div>
               <div>
                 <button>
@@ -90,7 +105,7 @@ export default function Cart() {
         </div>
 
       </div>
-
+        <Footerimg/>
     </div>
   )
 }

@@ -14,7 +14,7 @@ import WomenSection from "./Women_Section/Women_Sec";
 import Men  from "./landing/Pages/CategoriesMen"
 // import Navabar from "./landing/Component/Home/Navabar";
 import Login from './login/Login';
-
+import Address from "./landing/Component/Payment/Address"
 
 function App() {
  
@@ -30,6 +30,7 @@ function App() {
         <Route path='/women-section' element={<WomenSection/>}/>
         <Route path='/bag' element={<Cart />}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/address' element={<Address/>}/>
       </Routes>
       
 

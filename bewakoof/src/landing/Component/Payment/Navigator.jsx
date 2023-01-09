@@ -5,8 +5,8 @@ import {
   AiFillDollarCircle,
   AiFillIdcard,
 } from "react-icons/ai";
-import { GiCroissantsPupil } from "react-icons/gi";
-import { RiBuilding2Fill } from "react-icons/ri";
+// import { GiCroissantsPupil } from "react-icons/gi";
+// import { RiBuilding2Fill } from "react-icons/ri";
 import CardNo from "./CardNo";
 import styles from "./styles/nav.module.css";
 
@@ -15,27 +15,27 @@ const Navigator = () => {
     <div className={styles.Box}>
       <div className={styles.container}>
         <div>
-          <AiFillCreditCard />
+          {/* <AiFillCreditCard /> */}
           Credit Card/DebitCard
         </div>
         <div>
-          <AiFillWallet />
+          {/* <AiFillWallet /> */}
           Wallet
         </div>
         <div>
-          <GiCroissantsPupil />
+          {/* <GiCroissantsPupil /> */}
           UPI
         </div>
         <div>
-          <RiBuilding2Fill />
+          {/* <RiBuilding2Fill /> */}
           Net bankingx
         </div>
         <div>
-          <AiFillDollarCircle />
+          {/* <AiFillDollarCircle /> */}
           Cash On Deliveryx
         </div>
         <div>
-          <AiFillIdcard />
+          {/* <AiFillIdcard /> */}
           Buy Now Pay Laterx
         </div>
       </div>
