@@ -35,12 +35,12 @@ export default function Cart() {
         
         <div id={style.left_container} >
         <div className='form'>
-        <h2>SHIPPING ADDRESS</h2>
+        <h2>PAYMENT</h2>
         <div ><input placeholder='First Name'/><input placeholder='Last Name'/></div>
         <div ><input placeholder='Address'/></div>
         <div ><input placeholder='City'/><input placeholder='State'/><input placeholder='Pin Code'/></div>
         <div ><input placeholder='Phone'/></div>
-        <div><Link> Return</Link><Link to={'/payment'}><button >CONTINUE TO PAYMENT</button></Link></div>
+        <div><Link> Return</Link><Link to={'/payment'}><button >PAY</button></Link></div>
         </div>
             <div style={{display:"none"}}>
 
