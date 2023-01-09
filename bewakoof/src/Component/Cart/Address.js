@@ -7,20 +7,7 @@ import CartCard from './CartCard'
 
 export default function Cart() {
     const navigate = useNavigate();
-  const { cart,visited } = useSelector((state) => state.cart);
-  console.log(visited);
-  // Store.subscribe()
-  const [coupon,setCoupon]=useState(false)
-  const[total,setTotal]=useState(0)
-  const[sub,setSub]=useState(0)
-  
-  const handeltotal=(n)=>{
-    setTotal(total=>total+n)
-    console.log(n)
-  }
-  const handelsub=(n)=>{
-    setSub(sub=>sub+n)
-  }
+    var data = JSON.parse(localStorage.getItem("detail")); 
   return (
     <div>
 
@@ -41,13 +28,6 @@ export default function Cart() {
         <div ><input placeholder='Phone'/></div>
         <div ><Link to={"/bag"} style={{textDecoration:"underline white",color:"red"}}> Return</Link><Link to={'/payment'}style={{textDecoration:"underline black"}} >CONTINUE TO PAYMENT</Link></div>
         </div>
-            <div style={{display:"none"}}>
-
-          {cart.map((el,ind)=>{
-              
-              return <CartCard key={ind+1} data={el} total={handeltotal} sub={handelsub} ind={ind}/>
-            })}
-            </div>
         
         </div>
 
@@ -62,19 +42,23 @@ export default function Cart() {
             <div id={style.price_calc}>
               <div>
                 <p>Total MRP (Incl. of taxes)</p>
-                <p>₹ {total}</p>
+                <p>₹ {data.mrp}</p>
               </div>
               <div>
                 <p>Shipping Charges </p>
-                {sub==0?<p>0</p>:<p>{sub>500?"Free":50}</p>}
+                <p>{data.shipping}</p>
               </div>
               <div>
                 <p>Bag Discount</p>
-                <p>₹ -{total-sub}</p>
+                <p>₹ -{data.bag}</p>
               </div>
               <div>
                 <p>Subtotal</p>
-                <p>₹ {sub}</p>
+                <p>₹ {data.sub}</p>
+              </div>
+              <div>
+                <p>Coupon Discount</p>
+                <p>₹ -{data.coupon}</p>
               </div>
             </div>
 
@@ -83,7 +67,7 @@ export default function Cart() {
             <div id={style.final_price}>
               <div style={{display:"flex",justifyContent:"space-between",width:"100%"}}>
                 <p>Total</p>
-                {sub==0?<p>0</p>:<p>₹ {sub>500?sub:sub+50}</p>}
+              <p>₹ {data.total}</p>
               </div>
             </div>
 

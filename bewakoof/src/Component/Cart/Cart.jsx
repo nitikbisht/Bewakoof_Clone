@@ -18,8 +18,16 @@ export default function Cart() {
   const[dis,setDis]=useState(false)
   const[minus,setMinus]=useState(0)
   useEffect(()=>{
-    
-  },[coupon,total,sub])
+    const details={
+      mrp:total,
+      shipping:sub>500?"Free":50,
+      bag:total-sub,
+      sub:sub,
+      coupon:minus,
+      total:sub>500?sub-minus:sub+50-minus
+    }
+    localStorage.setItem("detail",JSON.stringify(details))
+  },[coupon,total,sub,minus])
   const handeltotal=(n)=>{
     setTotal(total=>total+n)
     console.log(n)

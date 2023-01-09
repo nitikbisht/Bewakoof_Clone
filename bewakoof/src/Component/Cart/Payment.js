@@ -8,19 +8,14 @@ import Footerimg from './Footerimg';
 import {Store} from "../../landing/Store/Store"
 export default function Cart() {
     const navigate = useNavigate();
+    var data = JSON.parse(localStorage.getItem("detail")); 
   const { cart,visited } = useSelector((state) => state.cart);
   console.log(visited);
   // Store.subscribe()
   const [coupon,setCoupon]=useState(false)
   const[total,setTotal]=useState(0)
   const[sub,setSub]=useState(0)
-  const handeltotal=(n)=>{
-    setTotal(total=>total+n)
-    console.log(n)
-  }
-  const handelsub=(n)=>{
-    setSub(sub=>sub+n)
-  }
+  
   return (
     <div>
 
@@ -44,20 +39,19 @@ export default function Cart() {
             <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>UPI</h4></div>
             <div style={{height:"20%",border:"1px solid lightgrey",textAlign:"center",cursor:"pointer"}}><h4>Net Banking</h4></div>
           </div>
-          <div>pay</div>
+          <div style={{width:"100%",padding:"20px",paddingTop:"50px"}}>
+            <input style={{width:"100%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"Card Number"}/>
+            <input style={{width:"65%",height:"30px",marginBottom:"16px",marginRight:"25px",paddingLeft:"10px"}} placeholder={"Valid Through"}/>
+            <input style={{width:"20%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"CVV"} type={"password"} maxLength={3}/>
+            <input style={{width:"100%",height:"30px",marginBottom:"16px",paddingLeft:"10px"}} placeholder={"Name On Card"}/>
+            <p style={{marginTop:"15px"}}>This transaction you make is totally secure.</p>
+            
+            <button style={{width:"80%",height:"35px",marginLeft:"10%",backgroundColor:"black",color:"white"}} onClick={()=>navigate("/")}>PAY ₹ {data.total}</button>
+          </div>
         </div>
-
         </div>
-            <div style={{display:"none"}}>
-
-          {cart.map((el,ind)=>{
-              
-              return <CartCard key={ind+1} data={el} total={handeltotal} sub={handelsub} ind={ind}/>
-            })}
-            </div>
         
         </div>
-
         <div id={style.right_container}>
           <div id={style.totalAmount}>
             <div id={style.price_summary}>
@@ -69,19 +63,23 @@ export default function Cart() {
             <div id={style.price_calc}>
               <div>
                 <p>Total MRP (Incl. of taxes)</p>
-                <p>₹ {total}</p>
+                <p>₹ {data.mrp}</p>
               </div>
               <div>
                 <p>Shipping Charges </p>
-                {sub==0?<p>0</p>:<p>{sub>500?"Free":50}</p>}
+                <p>{data.shipping}</p>
               </div>
               <div>
                 <p>Bag Discount</p>
-                <p>₹ -{total-sub}</p>
+                <p>₹ -{data.bag}</p>
               </div>
               <div>
                 <p>Subtotal</p>
-                <p>₹ {sub}</p>
+                <p>₹ {data.sub}</p>
+              </div>
+              <div>
+                <p>Coupon Discount</p>
+                <p>₹ -{data.coupon}</p>
               </div>
             </div>
 
@@ -90,7 +88,7 @@ export default function Cart() {
             <div id={style.final_price}>
               <div style={{display:"flex",justifyContent:"space-between",width:"100%"}}>
                 <p>Total</p>
-                {sub==0?<p>0</p>:<p>₹ {sub>500?sub:sub+50}</p>}
+              <p>₹ {data.total}</p>
               </div>
             </div>
 
