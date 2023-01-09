@@ -39,16 +39,18 @@
 
 #prod_text {
     /* border: 2px solid rebeccapurple; */
-    text-align: left;
+    /* text-align: left; */
     padding: 5px 10px;
 }
 
 #price {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     margin-top: -15px;
-    margin-left: -7px;
+    /* margin-left: -7px; */
+    gap: 20px;
+
 }
 
 #price p{
