@@ -1,21 +1,9 @@
 import React from 'react'
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
 import style from "./Payment.module.css"
-import CartCard from './CartCard'
-import Footerimg from './Footerimg';
-import {Store} from "../../landing/Store/Store"
 export default function Cart() {
     const navigate = useNavigate();
     var data = JSON.parse(localStorage.getItem("detail")); 
-  const { cart,visited } = useSelector((state) => state.cart);
-  console.log(visited);
-  // Store.subscribe()
-  const [coupon,setCoupon]=useState(false)
-  const[total,setTotal]=useState(0)
-  const[sub,setSub]=useState(0)
-  
   return (
     <div>
 

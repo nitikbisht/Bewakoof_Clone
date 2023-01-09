@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import dat from "../db.json"
-import ProductFilter from './ProductFilter'
+// import ProductFilter from './ProductFilter'
 import style from "./MenClothing.module.css"
 import Display from './Display'
 // import Footer from '../landing/Footer'

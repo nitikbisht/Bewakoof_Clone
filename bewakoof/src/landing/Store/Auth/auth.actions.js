@@ -16,7 +16,7 @@ export const loginAPI = (creds) => async (dispatch) => {
     );
     dispatch({
       type: AUTH_SIGN_IN_SUCCESS,
-      payload: response.data.Token,
+      payload: "asdfghjkl.",
     });
     window.location.reload();
 
