@@ -5,8 +5,12 @@ import Form from "react-bootstrap/Form";
 import { loginAPI } from "../../Store/Auth/auth.actions";
 import { useDispatch, useSelector } from "react-redux";
 import SuccessModal from "./Modal";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
+  const navigate=useNavigate()
+  
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -26,6 +30,8 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(loginAPI(form));
+    
+navigate("/")
   };
   const handleClose = () => {
     setshow(false);
