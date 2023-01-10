@@ -8,12 +8,12 @@ import Navabar from "../landing/Component/Home/Navabar";
 const Login = () => {
   const navigate = useNavigate();
   const { isAuthenticated } = useSelector((state) => state.auth.data);
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate("/");
-      // <Navigate to={"/"}/>
-    }
-  }, [isAuthenticated]);
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     navigate("/");
+  //     // <Navigate to={"/"}/>
+  //   }
+  // }, [isAuthenticated]);
   return (<>
     <Navabar/>
     <div className={styles.Login}>

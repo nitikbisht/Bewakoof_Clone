@@ -7,6 +7,7 @@ import Footer from '../landing/Component/Home/Footer'
 import { useDispatch, useSelector } from 'react-redux'
 import {myaction} from '../landing/Store/Cart/action'
 import Display from './Display'
+import Viewed from "./Viewed"
 function Productdescription() {
   const navigate = useNavigate();
     const {id}=useParams()
@@ -101,7 +102,7 @@ navigate("/login")
       <div style={{display:"flex",overflow:"hidden"}}>
               {visited.map((el,ind)=>{
                 console.log(el)
-                return <Display key={ind+1} data={el}/>
+                return <Viewed key={ind+1} data={el}/>
               })}
       </div>
     </div>:""}

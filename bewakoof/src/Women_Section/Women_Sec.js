@@ -136,9 +136,9 @@ function MenSection(props) {
                  <img src={elem.img} alt=""  width={"95%"} height={"350px"}/>
                   <h5 style={{textAlign:"center"}}>{elem.brand}</h5>
                   <p style={{textAlign:"center",marginTop:"-10px"}}>{elem.title}</p>
-                  <div style={{display:"flex",justifyContent:"space-evenly",marginTop:"-15px"}}>
+                  <div style={{display:"flex",justifyContent:"space-evenly",marginTop:"0px"}}>
                   <p>₹{elem.price}</p>
-                  <p style={{textDecoration:"line-through",marginTop:"0px"}}>{elem.strike}</p>
+                  <p style={{textDecoration:"line-through",marginTop:"-18px"}}>{elem.strike}</p>
                   <p style={{color:"#1ab64f"}}> {elem.off} OFF</p>
                   </div>
                  </div>
@@ -189,9 +189,9 @@ function MenSection(props) {
                   <img src={elem.img} alt=""  width={"95%"} height={"350px"}/>
                    <h5 style={{textAlign:"center"}}>{elem.brand}</h5>
                    <p style={{textAlign:"center",marginTop:"-10px"}}>{elem.title}</p>
-                   <div style={{display:"flex",justifyContent:"space-evenly",marginTop:"-15px"}}>
+                   <div style={{display:"flex",justifyContent:"space-evenly",marginTop:"0px"}}>
                    <p>₹{elem.price}</p>
-                   <p style={{textDecoration:"line-through",marginTop:"0px"}}>{elem.strike}</p>
+                   <p style={{textDecoration:"line-through",marginTop:"-18px"}}>{elem.strike}</p>
                    <p style={{color:"#1ab64f"}}> {elem.off} OFF</p>
                    </div>
                   </div>
