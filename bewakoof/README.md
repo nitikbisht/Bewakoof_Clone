@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# **TASK**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Our task is to create a pixel-perfect clone of the famous e-commerce website [bewakoof.com](http://bewakoof.com) with basic functionalities and a good-looking user interface.
 
-## Available Scripts
+<img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" align="center"/>
 
-In the project directory, you can run:
+## **PROJECT LINK**
 
-### `npm start`
+[DEPLOY](https://bewakoof-clone6.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **LANDING PAGE :**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our landing page looks like this:-
 
-### `npm test`
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674309000055/2d78a9f6-80a8-4ef2-ad17-f05c16b135af.jpeg" align="center"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This page has a navbar as we see in the bewakoof.com website. At the bottom of the page, we have a footer.
 
-### `npm run build`
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674309951252/95720631-2990-4e5d-bd0c-7fc07d738cd3.jpeg" align="center"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **LOGIN PAGE:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the user clicks on the Login button, it redirects the user to the Login page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674309714455/a5974299-66cc-420f-bd16-e5547e6a08a2.jpeg" align="center"/>
 
-### `npm run eject`
+### **PRODUCT PAGE :**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674310284356/ad9b16e7-474a-4a29-89c6-61ee7f5f6a1b.jpeg" align="center"/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **PRODUCT DESCRIPTION PAGE :**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674310847768/082d2e6e-c141-48cc-919a-8a006881e9c8.jpeg" align="center"/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **CART PAGE :**
 
-## Learn More
+On clicking the "Add To Cart " page it adds product to the cart.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674311016879/18a668e2-2864-482c-8eec-426a8f183997.jpeg" align="center"/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **PAYMENT PAGE :**
 
-### Code Splitting
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674311140711/ca2ed13d-dd54-4e23-b719-ea4fd6e0579e.jpeg" align="center"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## **Challenges:**
 
-### Analyzing the Bundle Size
+1. Team Coordination.
+    
+2. Git handling.
+    
+3. Communication. (Worked Remotely)
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **ID & TECH TOOLS**
 
-### Making a Progressive Web App
+VS-CODE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+GITHUB
 
-### Advanced Configuration
+## **TECHNOLOGIES USED**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1.React
 
-### Deployment
+2.Redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3.HTML
 
-### `npm run build` fails to minify
+4.CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5.JavaScript
+
+6.JSON
+
+## TEAM
+
+1. Nitik Bisht :- https://github.com/nitikbisht
+    
+2. Himangshu Mahato :- https://github.com/himangshumahato82
+    
+3. ALOK YADAV :- https://github.com/alok1910010
+    
+4. Sanjay Loncha :- https://github.com/sanjayloncha
+    
+5. Anshuman Pal :- https://github.com/AnshumanPal
+    
+
+> ## THANK YOU !
+
+> TEAM BEWAKOOF CLONE
